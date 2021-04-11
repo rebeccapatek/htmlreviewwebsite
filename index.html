@@ -27,4 +27,35 @@
       <p>The body element is a key HTML element used to build a webpage.  Only content inside the opening and closing body tags can be displayed on the screen. (although some browsers do accommodate for code outside the body element.
 
         So usually most of the code on your screen is nested in the body element.</p>
+    <h2>Let's talk about Structure</h2>
+    <p>When an element is contained inside of another element, it is considered the child of that element.  So for example if you have a paragraph tag with content inside of a body element, then you would say that the paragraph is considered the "child" of the "parent" body element.  You could also say that it is nested in the parent element.</p>
+
+    <p>For readability, it is common practice to add two spaces of indentation for the child of a parent element.</p>
+    <p>There can be multiple levels of nesting (grandchildren, great-grandchildren, etc.) The relationship between elements and their ancestors is known as <strong>hierarchy</strong>.</p>
+    <p>One of the reasons that understanding the HTML hierarchy is important, is because the child elements can inherit behavior and styling from their parent element.</p>
+    <h4>Here's an example:</h4>
+    <div>&nbsp;&nbsp; &lt;body&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;h1&gt;&lt;/h1&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;  &lt;p&gt;&lt;/p&gt;</div>
+    <div>&nbsp;&nbsp;  &lt;/body&gt;</div>
+    <p>Both the header and the paragraph would be considered children of the body, while the h1 and p would also be considered siblings.
+    </p>
+    <h2>Let's talk about the div tag</h2>
+    <p>A div is another important element in HTML.  Div stands for division and they are defined as a container that divides the page into Section. These are very useful for grouping elements in your HTML together.
+        Divs don't inherently have a visual representation, but when we want to apply custom styles using CSS to our elements, divs allow us to group the HTML elements and apply the same styles for all HTML elements inside.</p>
+    <p>Attributes are a way to expand an element's tag.</p>
+    <ul>
+        <li>These are content added to the opening tag of an element.</li>
+        <li>These can be used to provide information or to change styling.</li>
+    </ul>
+    <p>Attributes have two parts</p>
+    <ol>
+        <li>The name of the attribute. (ex: id)</li>
+        <li>The value of the attribute. (ex: "intro")</li>
+    </ol>
+    <h4>So here's what a div would look like with this attribute:</h4>
+    <div>&nbsp;&nbsp; &lt;div&gt; id="intro"></div>
+    <div> &nbsp;&nbsp;&nbsp;&nbsp;  &lt;h1&gt;Introduction&lt;/h1&gt;</div>
+    <div>&nbsp;&nbsp;  &lt;/div&gt;</div>
+
 </body>
