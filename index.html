@@ -57,5 +57,41 @@
     <div>&nbsp;&nbsp; &lt;div&gt; id="intro"></div>
     <div> &nbsp;&nbsp;&nbsp;&nbsp;  &lt;h1&gt;Introduction&lt;/h1&gt;</div>
     <div>&nbsp;&nbsp;  &lt;/div&gt;</div>
-
+    <h2>Displaying text in HTML</h2>
+    <p>Paragraph or span are two common tags</p>
+    <ul>
+        <li>paragraphs contain a block of plain text.</li>
+        <li>span contains short pieces of text or other HTML (is an inline element).  They are used to separate small pieces of content that are on the same line as other content.</li>
+    </ul>
+    <h3>BLOCK-LINE ELEMENTS have a line break before and after them. div and p examples. BLOCK LINE ELEMENTS will take up the entire width of the its containing element.  By default, &lt;div&gt; or &lt;p&gt; will push sibling elements to a new line or section of the page. One difference with div is that it will not skip a line</h3>
+    <h3>INLINE ELEMENTS are inside a sentence or paragraph. Span tags are an example.
+        INLINE ELEMENTS are a more conservative use of space. They only take up as much space as they need and will not force surrounding content to a new line.</h3>
+    <div>span tags are great when you want to make one word bold, italic, a different color.</div>
+    <h3>There are a few HTML tags that style the text.</h3>
+    <ul>
+        <li>&lt;em&gt; This is short for emphasis.  It will italicize the text within this tag</li>
+        <li>&lt;strong&gt; will make the text bold.</li>
+        <li>&lt;br&gt; is the line break element in HTML.  It is different from the other tags in that it is only composed of a starting tag. It will send the following text to the next line on the screen. It will not leave an empty line, but if you would like to add an empty line, just put the &lt;br&gt; twice.</li>
+        <li>&lt;ul&gt; is and unordered list tag used to create a bulleted list.  The &lt;ul&gt; element should not hold raw text, rather the nested list element enclosed in &lt;li&gt;&lt;/li&gt;</li>
+        <li>&lt;ol&gt; is an ordered list and is used to create a numbered list. &lt;ol&gt; would have to have the list elements nested as &lt;li&gt;&lt;/li&gt;</li>
+    </ul>
+    <h2>Images</h2>
+    <p>&lt;em&gt; is the image tag that allows you to add an image to a webpage. The image tag is a self-closing tag so that the end of the image tags has a forward slash.</p>
+    <p>The image tag has a required attribute src (stands for source) and must be set to the images source or the location of the image.  In some cases, the value of src must be a URL.URL stands for <strong>U</strong>niversal <strong>R</strong>esource <strong>L</strong>ocator.</p>
+    <p>It is important to use the alt attribute when putting an image on your website .  This should be a description of the image.  Here are the purposes of the alt attribute:</p>
+    <ol>
+        <li>If an image fails to load on the webpage, then the user can mouse over the area originally intended for the image and read a brief description of what was meant to be there.</li>
+        <li> Visually impaired users often browse the web by using screen reading software.When you The alt attribute allows the screen reading software to read the image's description to the visually impaired user.Might be an ADA law as well?</li>
+        <li>The alt attribute plays a role in SEO (stands for Search Engine Optimization) because search engines cannot see and image.  Having descriptive alt attributes can help improve the ranking of your site.</li>
+    </ol>
+    <h3>Video</h3>
+    <p>Video tags require the src attribute as well.  Unlike image tags they require an opening and closing tag.</p>
+    <h4>Here's and example of a video tag</h4>
+    <p>&lt;video src="myVideo.mp4" width="320" height="240" controls&gt;
+        Video not supported
+        &lt;/video&gt;</p>
+    <p>Video not supported will only be displayed if the video doesn't load</p>
+    <p>The width and height attributes are used to set the size of the video displayed in the browser.</p>
+    <p>The controls attribute instructs the browser to included basic controls: pause, play, skip.</p>
+    <p>Alt tags are not supported in video. </p>
 </body>
